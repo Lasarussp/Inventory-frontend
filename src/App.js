@@ -20,7 +20,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <GoogleOAuthProvider
+      <GoogleOAuthProvider
         clientId={`${process.env.REACT_APP_GOOGLE_CLIENT_ID}`}>
         <SnackbarProvider>
           {user && <NavBar />}
@@ -40,7 +40,7 @@ function App() {
           </Routes>
           <Footer />
         </SnackbarProvider>
-        </GoogleOAuthProvider>
+      </GoogleOAuthProvider>
     </BrowserRouter>
   );
 }
