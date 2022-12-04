@@ -10,7 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { createClient, updateClient } from '../../actions/clientActions';
-import { useSnackbar } from '@mui/base/SnackbarUnstyled';
+//import { useSnackbar } from '@mui/base/SnackbarUnstyled';
 
 
 const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
@@ -39,7 +39,7 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
 
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('profile')));
-    // setClientData({...clientData, userId: user?.result?._id})
+     setClientData({...clientData, userId: user?.result?._id})
   }, [location]);
 
   useEffect(() => {
