@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-//import { useSnackbar } from 'react-simple-snackbar';
+import { useSnackbar } from 'react-simple-snackbar';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { Avatar, Button, Paper, Grid, Container } from '@mui/material';
@@ -48,7 +48,7 @@ const Settings = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(updateProfile(profiles?._id, form,openSnackbar));
+    dispatch(updateProfile(profiles?._id, form, openSnackbar));
     window.location.reload();
     setSwitchEdit(0);
   };

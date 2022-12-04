@@ -18,6 +18,7 @@ export const getInvoice = (id) => async (dispatch) => {
       search: user?.result?._id || user?.result?.sub,
     });
     const invoiceData = { ...data, businessDetails };
+
     dispatch({ type: GET_INVOICE, payload: invoiceData });
   } catch (error) {
     console.log(error.response);
@@ -61,6 +62,7 @@ export const updateInvoice = (id, invoice) => async (dispatch) => {
 export const deleteInvoice = (id, openSnackbar) => async (dispatch) => {
   try {
     await api.deleteInvoice(id);
+
     dispatch({ type: DELETE, payload: id });
     openSnackbar('Invoice deleted successfully');
   } catch (error) {

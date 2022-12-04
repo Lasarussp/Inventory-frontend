@@ -13,4 +13,5 @@ export const initialState = {
     status: '',
     type: 'Invoice',
     creator: '',
-}
+};
+

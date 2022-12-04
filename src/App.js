@@ -1,8 +1,10 @@
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import SnackbarProvider from 'react-simple-snackbar';
 import ClientList from './pages/clients/ClientList';
 import Footer from './components/Footer/Footer';
 import Invoice from './pages/Invoice/Invoice';
@@ -18,6 +20,9 @@ function App() {
 
   return (
     <BrowserRouter>
+      <GoogleOAuthProvider
+        clientId={`${process.env.REACT_APP_GOOGLE_CLIENT_ID}`}>
+        <SnackbarProvider>
           {user && <NavBar />}
           <Header />
           <Routes>
@@ -34,6 +39,8 @@ function App() {
             <Route path='/reset/:token' element={<Reset />} />
           </Routes>
           <Footer />
+        </SnackbarProvider>
+      </GoogleOAuthProvider>
     </BrowserRouter>
   );
 }

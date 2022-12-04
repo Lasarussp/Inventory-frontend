@@ -26,7 +26,7 @@ import { useLocation } from 'react-router-dom';
 import { deleteInvoice, getInvoicesByUser } from '../../actions/invoiceActions';
 import NoData from '../../components/svgIcons/NoData';
 import Spinner from '../../components/Spinner/Spinner';
-import { useSnackbar } from '@mui/base/SnackbarUnstyled';
+import { useSnackbar } from 'react-simple-snackbar';
 import { Box } from '@mui/material';
 
 function TablePaginationActions(props) {

@@ -36,11 +36,13 @@ const Header = () => {
     if (token) {
       if (user?.result?.exp * 1000 < new Date().getTime()) logout();
     }
+
     // eslint-disable-next-line
   }, [location]);
 
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
+
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
@@ -49,6 +51,7 @@ const Header = () => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
+
     setOpen(false);
   };
 
@@ -70,6 +73,7 @@ const Header = () => {
     if (prevOpen.current === true && open === false) {
       anchorRef.current.focus();
     }
+
     prevOpen.current = open;
   }, [open]);
 

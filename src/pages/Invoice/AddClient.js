@@ -8,10 +8,11 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import Typography from '@mui/material/Typography';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { createClient, updateClient } from '../../actions/clientActions';
-import { useSnackbar } from '@mui/base/SnackbarUnstyled';
-
+import { useSnackbar } from 'react-simple-snackbar';
 
 const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
   const location = useLocation();

@@ -14,7 +14,7 @@ import {
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { createProfile } from '../../actions/profile';
-import { useSnackbar } from '@mui/base/SnackbarUnstyled';
+import { useSnackbar } from 'react-simple-snackbar';
 import CircularProgress from '@mui/material/CircularProgress';
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';

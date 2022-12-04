@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <div>
       <section className={styles.hero}>
-        <h1>Welcome to our BoB'G Inventory Business</h1>
+        <h1>Welcome To Our BoB'G Inventory Business App</h1>
         <div className={styles.paragraph}>
           <p>
-            Invoicing app Build with MongoDB, Express, React & Nodejs
+            Invoice App with MongoDB, Express, React & Nodejs
           </p>
         </div>
         <div className={styles.imgContainer}>
           <img
             src='https://res.cloudinary.com/almpo/image/upload/v1637241441/special/banner_izy4xm.png'
-            alt='inventory-app'
+            alt='invoice-app'
           />
         </div>
       </section>

@@ -32,8 +32,7 @@ const PaymentHistory = ({ paymentRecords}) => {
       </div>
     </div>
   </div>
-
-    )
+  )
 }
 
 export default PaymentHistory;
