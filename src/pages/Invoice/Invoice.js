@@ -27,8 +27,8 @@ import Divider from '@mui/material/Divider';
 import SaveIcon from '@mui/icons-material/Save';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
-import { initialState } from '../../initialState';
-import currencies from '../../currencies.json';
+import { initialState }  from '../../initialState';
+import  currencies  from '../../currencies.json';
 import {
   createInvoice,
   getInvoice,
