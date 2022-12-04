@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.footerText}>
-        BoB'G @copyright;{new Date().getFullYear()} | Made in India
+        Bob'g © {new Date().getFullYear()} || India
       </div>
       {user && <FabButton />}
     </footer>

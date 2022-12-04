@@ -1,4 +1,4 @@
-//import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
@@ -20,6 +20,8 @@ function App() {
 
   return (
     <BrowserRouter>
+    <GoogleOAuthProvider
+        clientId={`${process.env.REACT_APP_GOOGLE_CLIENT_ID}`}>
         <SnackbarProvider>
           {user && <NavBar />}
           <Header />
@@ -38,6 +40,7 @@ function App() {
           </Routes>
           <Footer />
         </SnackbarProvider>
+        </GoogleOAuthProvider>
     </BrowserRouter>
   );
 }
