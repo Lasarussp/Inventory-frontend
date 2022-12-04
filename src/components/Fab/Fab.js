@@ -22,8 +22,8 @@ const FabButton = () => {
         {location.pathname !== '/invoice' && (
           <Action
             text='New Invoice'
-            // onClick={() => navigate(`/invoice`)}
-            onClick={() => (window.location.href = '/invoice')}>
+            // onClick={() => navigate(`/invoice`)} >
+            onClick={() => (window.location.href = '/invoice')} >
             <CreateIcon />
           </Action>
         )}
