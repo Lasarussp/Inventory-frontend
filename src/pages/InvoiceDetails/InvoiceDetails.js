@@ -27,7 +27,7 @@ import Spinner from '../../components/Spinner/Spinner';
 import ProgressButton from 'react-progress-button';
 import axios from 'axios';
 import { saveAs } from 'file-saver';
-import { Modal } from '../Payments/Modal';
+import  Modal  from '../Payments/Model';
 import PaymentHistory from './PaymentHistory';
 
 const InvoiceDetails = () => {

@@ -4,7 +4,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import PhoneIcon from '@mui/icons-material/Phone';
+//import PhoneInTalkIcon from '@mui/icons-material/phoneInTalkIcon';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import AccountBalanceWalletRoundedIcon from '@mui/icons-material/AccountBalanceWalletRounded';
 import Avatar from '@mui/material/Avatar';
@@ -38,7 +39,7 @@ export default function ProfileDetail({ profiles }) {
         </ListItem>
 
         <ListItem>
-          <PhoneInTalkIcon style={{ marginRight: '20px', color: 'gray' }} />
+          <PhoneIcon style={{ marginRight: '20px', color: 'gray' }} />
           <ListItemText primary={profiles?.phoneNumber} secondary='' />
         </ListItem>
 

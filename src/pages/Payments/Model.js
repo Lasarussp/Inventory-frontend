@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import { TextField, Grid } from '@mui/material';
-import DatePicker from './DatePicker';
+import DatePicker from './DataPicker';
 import Autocomplete from '@mui/material/Autocomplete';
 
 import { useDispatch } from 'react-redux';
